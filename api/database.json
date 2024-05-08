@@ -1,0 +1,11 @@
+{
+  "complaintsDesc": [
+    {
+      "id": 1,
+      "description": "Rossz kialakítás",
+      "complaints": "Rossz fogni",
+      "product": "hajsütővas",
+      "type": "Kialakítási hiba"
+    }
+  ]
+}

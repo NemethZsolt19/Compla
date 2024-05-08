@@ -1,0 +1,15 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "Fake REST API server",
+  "main": "index.js",
+  "scripts": {
+    "start": "hai-server database.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hai-server": "^0.0.4"
+  }
+}

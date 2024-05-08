@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compla</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">        
+  </head>
+  <body>
+    <div class="container">
+      <h1>Compla</h1>
+      
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#operatorModal"
+      onclick="showAddModal()">
+        Hozzáadás
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="operatorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="operatorModalLabel">Hozzáadás</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="addForm">
+                <div class="input">
+                  <label for="id" class="form-label">Id</label>
+                  <input type="text" id="id" class="form-control" readonly>
+                </div>
+                <div class="input">
+                  <label for="description" class="form-label">Leírás</label>
+                  <input type="text" id="name" class="form-control">
+                </div>
+                <div class="input">
+                  <label for="complaint" class="form-label">Panasz</label>
+                  <input type="text" id="city" class="form-control">
+                </div>
+                <div class="input">
+                  <label for="product" class="form-label">Termék</label>
+                  <input type="text" id="salary" class="form-control">
+                </div>
+                <div class="input">
+                  <label for="type" class="form-label">Típus</label>
+                  <input type="text" id="salary" class="form-control">
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+              <button type="button" class="btn btn-primary" id="multiButton">Mentés</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Leírás</th>
+            <th>Panasz</th>
+            <th>Termék</th>
+            <th>Típus</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="compBody"></tbody>
+      </table>
+
+    </div>
+    <script src="bootstrap.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
+
