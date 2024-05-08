@@ -1,5 +1,5 @@
 /*
-*File: index.html
+*File: app.js
 *Author: Németh Zsolt
 *Copyright: 2024, Németh Zsolt
 *Group: Szoft I-2-N
